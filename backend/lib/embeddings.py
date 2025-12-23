@@ -6,6 +6,9 @@ from openai import OpenAI
 class EmbeddingService:
     """Service for generating text embeddings."""
 
+    # Target dimensions for database compatibility
+    DIMENSIONS = 768
+
     def __init__(
         self,
         api_key: str,
@@ -25,7 +28,8 @@ class EmbeddingService:
         """Generate embedding for a single text."""
         response = self.client.embeddings.create(
             model=self.embedding_model,
-            input=text
+            input=text,
+            dimensions=self.DIMENSIONS
         )
         return response.data[0].embedding
 
@@ -37,7 +41,8 @@ class EmbeddingService:
             batch = texts[i:i + batch_size]
             response = self.client.embeddings.create(
                 model=self.embedding_model,
-                input=batch
+                input=batch,
+                dimensions=self.DIMENSIONS
             )
             all_embeddings.extend([d.embedding for d in response.data])
 
