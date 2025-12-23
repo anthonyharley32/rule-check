@@ -66,3 +66,59 @@ def parse_heading(line: str) -> Optional[HeadingInfo]:
         heading_type='other',
         title=text
     )
+
+
+@dataclass
+class PenaltyScope:
+    """Scope information for a PENALTY/PENALTIES block."""
+    scope_type: str  # 'section', 'sections', 'article', 'inline'
+    scope_values: list[str]  # section/article numbers
+    raw_line: str
+
+
+def parse_penalty_scope(line: str) -> Optional[PenaltyScope]:
+    """
+    Parse a PENALTY: or PENALTIES: line and extract scope.
+
+    Returns None if line is not a penalty line.
+    """
+    # Match PENALTY: or PENALTIES:
+    penalty_match = re.match(r'^PENALT(?:Y|IES):\s*(.*)$', line.strip())
+    if not penalty_match:
+        return None
+
+    rest = penalty_match.group(1)
+
+    # Try to match (Section N)
+    section_match = re.match(r'^\(Section\s+(\d+)\)', rest)
+    if section_match:
+        return PenaltyScope(
+            scope_type='section',
+            scope_values=[section_match.group(1)],
+            raw_line=line
+        )
+
+    # Try to match (Sections N-M)
+    sections_match = re.match(r'^\(Sections\s+(\d+)-(\d+)\)', rest)
+    if sections_match:
+        return PenaltyScope(
+            scope_type='sections',
+            scope_values=[sections_match.group(1), sections_match.group(2)],
+            raw_line=line
+        )
+
+    # Try to match (Art. N) or (Article N)
+    article_match = re.match(r'^\(Art(?:icle)?\.?\s+(\d+)\)', rest)
+    if article_match:
+        return PenaltyScope(
+            scope_type='article',
+            scope_values=[article_match.group(1)],
+            raw_line=line
+        )
+
+    # No scope specified - inline penalty
+    return PenaltyScope(
+        scope_type='inline',
+        scope_values=[],
+        raw_line=line
+    )
