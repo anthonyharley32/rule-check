@@ -122,3 +122,40 @@ def parse_penalty_scope(line: str) -> Optional[PenaltyScope]:
         scope_values=[],
         raw_line=line
     )
+
+
+@dataclass
+class SituationInfo:
+    """Information extracted from a casebook situation header."""
+    ref: str  # "4.6.1"
+    rule: str
+    section: str
+    article: str
+    suffix: Optional[str] = None  # "A", "B", etc.
+
+
+def parse_situation(line: str) -> Optional[SituationInfo]:
+    """
+    Parse a casebook SITUATION line.
+
+    Matches patterns like:
+    - "4.6.1 SITUATION:"
+    - "1.13.2 SITUATION A :"
+
+    Returns None if line is not a situation header.
+    """
+    # Match X.X.X SITUATION or X.X.X SITUATION A :
+    match = re.match(
+        r'^(\d+)\.(\d+)\.(\d+)\s+SITUATION\s*([A-Z])?\s*:',
+        line.strip()
+    )
+    if not match:
+        return None
+
+    return SituationInfo(
+        ref=f"{match.group(1)}.{match.group(2)}.{match.group(3)}",
+        rule=match.group(1),
+        section=match.group(2),
+        article=match.group(3),
+        suffix=match.group(4)
+    )

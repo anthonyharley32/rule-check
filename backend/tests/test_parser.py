@@ -1,5 +1,5 @@
 import pytest
-from lib.parser import parse_heading, HeadingInfo, parse_penalty_scope, PenaltyScope
+from lib.parser import parse_heading, HeadingInfo, parse_penalty_scope, PenaltyScope, parse_situation, SituationInfo
 
 
 def test_parse_rule_heading():
@@ -80,5 +80,32 @@ def test_parse_penalty_no_scope():
 def test_parse_non_penalty():
     line = "This is regular text."
     result = parse_penalty_scope(line)
+
+    assert result is None
+
+
+def test_parse_situation():
+    line = "4.6.1 SITUATION:"
+    result = parse_situation(line)
+
+    assert result is not None
+    assert result.ref == "4.6.1"
+    assert result.rule == "4"
+    assert result.section == "6"
+    assert result.article == "1"
+
+
+def test_parse_situation_with_suffix():
+    line = "1.13.2 SITUATION A :"
+    result = parse_situation(line)
+
+    assert result is not None
+    assert result.ref == "1.13.2"
+    assert result.suffix == "A"
+
+
+def test_parse_non_situation():
+    line = "This is not a situation."
+    result = parse_situation(line)
 
     assert result is None
