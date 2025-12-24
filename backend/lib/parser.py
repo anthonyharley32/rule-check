@@ -141,21 +141,60 @@ def parse_situation(line: str) -> Optional[SituationInfo]:
     Matches patterns like:
     - "4.6.1 SITUATION:"
     - "1.13.2 SITUATION A :"
+    - "### 2.10.1 SITUATION A :"
+    - "1.18 SITUATION:" (two-part ref)
 
     Returns None if line is not a situation header.
     """
+    stripped = line.strip()
+
+    # Remove leading ### if present
+    if stripped.startswith('###'):
+        stripped = stripped[3:].strip()
+
     # Match X.X.X SITUATION or X.X.X SITUATION A :
     match = re.match(
-        r'^(\d+)\.(\d+)\.(\d+)\s+SITUATION\s*([A-Z])?\s*:',
-        line.strip()
+        r'^(\d+)\.(\d+)\.(\d+)\s+SITUATION\s*([A-Za-z])?\s*:',
+        stripped
     )
-    if not match:
-        return None
+    if match:
+        return SituationInfo(
+            ref=f"{match.group(1)}.{match.group(2)}.{match.group(3)}",
+            rule=match.group(1),
+            section=match.group(2),
+            article=match.group(3),
+            suffix=match.group(4).upper() if match.group(4) else None
+        )
 
-    return SituationInfo(
-        ref=f"{match.group(1)}.{match.group(2)}.{match.group(3)}",
-        rule=match.group(1),
-        section=match.group(2),
-        article=match.group(3),
-        suffix=match.group(4)
+    # Match X.X SITUATION or X.X SITUATION A : (two-part ref, no article)
+    match2 = re.match(
+        r'^(\d+)\.(\d+)\s+SITUATION\s*([A-Za-z])?\s*:',
+        stripped
     )
+    if match2:
+        return SituationInfo(
+            ref=f"{match2.group(1)}.{match2.group(2)}",
+            rule=match2.group(1),
+            section=match2.group(2),
+            article="0",  # No article in two-part refs
+            suffix=match2.group(3).upper() if match2.group(3) else None
+        )
+
+    return None
+
+
+def parse_situation_suffix_only(line: str) -> Optional[str]:
+    """
+    Parse a letter-only SITUATION line (e.g., "SITUATION A:").
+
+    These are sub-situations that inherit the ref from the previous numbered situation.
+    Returns the suffix letter if matched, None otherwise.
+    """
+    stripped = line.strip()
+
+    # Match "SITUATION A:" or "SITUATION B:" etc. (letter only, no number)
+    match = re.match(r'^SITUATION\s+([A-Za-z])\s*:', stripped)
+    if match:
+        return match.group(1).upper()
+
+    return None

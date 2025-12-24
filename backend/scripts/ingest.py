@@ -78,7 +78,7 @@ def main():
     embeddings = EmbeddingService(api_key=openrouter_key)
 
     # Define books to ingest
-    books_dir = Path(__file__).parent.parent.parent / "NFHS BOOKS"
+    books_dir = Path(__file__).parent.parent.parent / "books"
 
     books = [
         {
