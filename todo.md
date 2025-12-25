@@ -1,0 +1,11 @@
+-implement chat genius look for citations.
+-implement navi look and branching
+-find out why definitions aren't working.
+-use RAG search hybrid
+-be able to read the whole rule.
+-be able to access in context of section with highlight of important section/article (modal access?)
+-don't show 10 for each. set minimum
+-Is context carrying over onto second message?
+-streaming isn't word by word. clunky
+-inline citation blocks
+-tool calling

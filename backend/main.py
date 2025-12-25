@@ -27,7 +27,15 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-chat_service = ChatService()
+chat_service = None
+
+
+def get_chat_service():
+    """Lazy initialization of chat service."""
+    global chat_service
+    if chat_service is None:
+        chat_service = ChatService()
+    return chat_service
 
 
 class ChatRequest(BaseModel):
@@ -52,7 +60,7 @@ async def health():
 async def chat(request: ChatRequest):
     """Non-streaming chat endpoint."""
     try:
-        answer, citations = chat_service.chat(
+        answer, citations = get_chat_service().chat(
             question=request.question,
             top_k=request.top_k
         )
@@ -77,7 +85,7 @@ async def chat_stream(request: ChatRequest):
 
     def generate():
         try:
-            for event in chat_service.chat_stream(
+            for event in get_chat_service().chat_stream(
                 question=request.question,
                 top_k=request.top_k
             ):
