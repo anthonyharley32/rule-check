@@ -11,3 +11,19 @@ run:
   command: python3 -m uvicorn main:app --host 0.0.0.0 --port 8000
   network:
     port: 8000
+  secrets:
+    - name: SUPABASE_URL
+      value-from: "arn:aws:secretsmanager:us-east-1:896576128444:secret:rule-check/secrets:SUPABASE_URL::"
+    - name: SUPABASE_PUBLISHABLE_KEY
+      value-from: "arn:aws:secretsmanager:us-east-1:896576128444:secret:rule-check/secrets:SUPABASE_PUBLISHABLE_KEY::"
+    - name: SUPABASE_SECRET_KEY
+      value-from: "arn:aws:secretsmanager:us-east-1:896576128444:secret:rule-check/secrets:SUPABASE_SECRET_KEY::"
+    - name: OPENROUTER_API_KEY
+      value-from: "arn:aws:secretsmanager:us-east-1:896576128444:secret:rule-check/secrets:OPENROUTER_API_KEY::"
+    - name: LANGCHAIN_API_KEY
+      value-from: "arn:aws:secretsmanager:us-east-1:896576128444:secret:rule-check/secrets:LANGCHAIN_API_KEY::"
+  env:
+    - name: LANGCHAIN_TRACING_V2
+      value: "true"
+    - name: LANGCHAIN_PROJECT
+      value: "nfhs-rules-chat-prod"
