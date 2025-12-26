@@ -13,15 +13,15 @@ run:
     port: 8000
   secrets:
     - name: SUPABASE_URL
-      value-from: "arn:aws:secretsmanager:us-east-1:896576128444:secret:rule-check/secrets:SUPABASE_URL::"
+      value-from: "arn:aws:secretsmanager:us-east-1:896576128444:secret:rule-check/secrets-WhxRI6:SUPABASE_URL::"
     - name: SUPABASE_PUBLISHABLE_KEY
-      value-from: "arn:aws:secretsmanager:us-east-1:896576128444:secret:rule-check/secrets:SUPABASE_PUBLISHABLE_KEY::"
+      value-from: "arn:aws:secretsmanager:us-east-1:896576128444:secret:rule-check/secrets-WhxRI6:SUPABASE_PUBLISHABLE_KEY::"
     - name: SUPABASE_SECRET_KEY
-      value-from: "arn:aws:secretsmanager:us-east-1:896576128444:secret:rule-check/secrets:SUPABASE_SECRET_KEY::"
+      value-from: "arn:aws:secretsmanager:us-east-1:896576128444:secret:rule-check/secrets-WhxRI6:SUPABASE_SECRET_KEY::"
     - name: OPENROUTER_API_KEY
-      value-from: "arn:aws:secretsmanager:us-east-1:896576128444:secret:rule-check/secrets:OPENROUTER_API_KEY::"
+      value-from: "arn:aws:secretsmanager:us-east-1:896576128444:secret:rule-check/secrets-WhxRI6:OPENROUTER_API_KEY::"
     - name: LANGCHAIN_API_KEY
-      value-from: "arn:aws:secretsmanager:us-east-1:896576128444:secret:rule-check/secrets:LANGCHAIN_API_KEY::"
+      value-from: "arn:aws:secretsmanager:us-east-1:896576128444:secret:rule-check/secrets-WhxRI6:LANGCHAIN_API_KEY::"
   env:
     - name: LANGCHAIN_TRACING_V2
       value: "true"
