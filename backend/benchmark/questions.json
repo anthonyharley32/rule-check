@@ -5,40 +5,36 @@
       "question": "What is a double dribble?",
       "expected_answer": "A double dribble violation occurs when a player dribbles the ball, allows it to come to rest in one or both hands, and then dribbles again. It also occurs when a player dribbles the ball with both hands simultaneously.",
       "required_sources": ["Rule 4-15"],
-      "acceptable_sources": ["Case 4.15"],
+      "acceptable_sources": ["Case 4.15.1 SITUATION A"],
       "category": "pure_rules",
-      "difficulty": "easy",
-      "tags": ["violations", "dribbling"]
+      "difficulty": "easy"
     },
     {
       "id": "q002",
       "question": "What is a goaltend?",
       "expected_answer": "Goaltending occurs when a defensive player touches the ball during a field goal try or tap while the ball is in its downward flight entirely above the basket ring level, or touches the ball while it is on or within the basket. Goaltending can only be committed by defensive players.",
       "required_sources": ["Rule 4-22", "Rule 9-12"],
-      "acceptable_sources": ["Case 4.22"],
+      "acceptable_sources": ["Case 4.22.1 SITUATION A"],
       "category": "pure_rules",
-      "difficulty": "easy",
-      "tags": ["violations", "goaltending"]
+      "difficulty": "easy"
     },
     {
       "id": "q003",
       "question": "Where does it say anything about landing space of the shooter in the rule book?",
-      "expected_answer": "Rule 4-7-2 defines the airborne shooter and their protection. The defender must provide the shooter with a safe landing area. If a defender causes contact with an airborne shooter that is not incidental, it is a foul.",
+      "expected_answer": "Rule 4-7-2 defines the airborne shooter and their protection. The shooter must be able to return to the floor without contact from an opponent. If a defender causes non-incidental contact with an airborne shooter who is in the act of shooting, it is a foul per Rule 10-6-1.",
       "required_sources": ["Rule 4-7-2", "Rule 10-6-1"],
-      "acceptable_sources": ["Case 4.7.2"],
+      "acceptable_sources": ["Case 4.7.2 SITUATION A"],
       "category": "pure_rules",
-      "difficulty": "medium",
-      "tags": ["fouls", "airborne shooter", "landing space"]
+      "difficulty": "medium"
     },
     {
       "id": "q004",
       "question": "In three man mechanics, if the lead is table side and makes a foul call, what does the center do?",
-      "expected_answer": "When the tableside Lead makes a foul call in three-person mechanics, the Center rotates to become the new Lead on the opposite side of the court. The Trail remains as Trail.",
+      "expected_answer": "When the tableside Lead makes a foul call in three-person mechanics, there is NO rotation. The Center stays in their current position. The calling official (Lead) moves toward the table to report the foul. The Trail and Center maintain their positions.",
       "required_sources": ["Manual 7"],
       "acceptable_sources": [],
       "category": "mechanics",
-      "difficulty": "medium",
-      "tags": ["three-person mechanics", "rotations", "foul coverage"]
+      "difficulty": "medium"
     },
     {
       "id": "q005",
@@ -47,308 +43,277 @@
       "required_sources": ["Manual"],
       "acceptable_sources": [],
       "category": "mechanics",
-      "difficulty": "hard",
-      "tags": ["mechanics comparison", "lane coverage", "free throws"]
+      "difficulty": "hard"
     },
     {
       "id": "q006",
       "question": "Can the thrower run the end line after an offensive free throw violation?",
       "expected_answer": "No. The thrower may only run the end line after a made basket (goal) or awarded goal. A free throw violation results in a throw-in from the designated spot, not a running end line situation.",
       "required_sources": ["Rule 7-5-7"],
-      "acceptable_sources": ["Case 7.5.7"],
+      "acceptable_sources": ["Case 7.5.7 SITUATION A"],
       "category": "scenarios",
-      "difficulty": "hard",
-      "tags": ["throw-in", "end line", "free throw violations"]
+      "difficulty": "hard"
     },
     {
       "id": "q007",
       "question": "Does getting a team technical (slapping ball on throw-in) eat up the delay of game warning?",
       "expected_answer": "No. A team technical foul for slapping the ball on a throw-in is a separate penalty from the delay of game warning system. The delay of game warning is specifically for delay violations, and a technical foul is assessed independently.",
       "required_sources": ["Rule 10-1", "Rule 10-2"],
-      "acceptable_sources": ["Case 10.1", "Case 10.2"],
+      "acceptable_sources": ["Case 10.1.5 SITUATION A", "Case 10.2.1 SITUATION A"],
       "category": "scenarios",
-      "difficulty": "hard",
-      "tags": ["technical fouls", "delay of game", "warnings"]
+      "difficulty": "hard"
     },
     {
       "id": "q008",
       "question": "Where does it say that dribble-fumble-dribble = violation?",
-      "expected_answer": "A fumble is the accidental loss of player control. Rule 4-15-4 states that after a player has ended their dribble, they may not dribble again. However, recovering a fumble is not considered starting a new dribble. The sequence dribble-fumble-dribble is NOT a violation if the fumble was accidental.",
+      "expected_answer": "It does not say this because dribble-fumble-dribble is NOT a violation. Rule 4-25 defines a fumble as the accidental loss of player control. Rule 4-15-4 states that recovering a fumble and then dribbling again is legal. The sequence dribble-fumble-dribble is permitted because a fumble is not considered ending a dribble.",
       "required_sources": ["Rule 4-15", "Rule 4-25"],
-      "acceptable_sources": ["Case 4.15", "Case 4.25"],
+      "acceptable_sources": ["Case 4.15.4 SITUATION A", "Case 4.25.1 SITUATION A"],
       "category": "challenge",
-      "difficulty": "hard",
-      "tags": ["violations", "dribbling", "fumble", "trick question"]
+      "difficulty": "hard"
     },
     {
       "id": "q009",
       "question": "What do you do in a block/charge situation?",
       "expected_answer": "In a block/charge situation, officials must determine: (1) Did the defender establish legal guarding position before the opponent started their upward motion to shoot or pass? (2) Was the defender stationary or moving? (3) Did the defender give the airborne shooter room to land? If the defender was not in legal position, it's a blocking foul. If they were, it's a player control foul (charge).",
       "required_sources": ["Rule 4-7", "Rule 4-23", "Rule 10-6"],
-      "acceptable_sources": ["Case 4.7", "Case 10.6"],
+      "acceptable_sources": ["Case 4.7.2 SITUATION A", "Case 10.6.1 SITUATION A"],
       "category": "scenarios",
-      "difficulty": "medium",
-      "tags": ["fouls", "block charge", "legal guarding position"]
+      "difficulty": "medium"
     },
     {
       "id": "q010",
       "question": "What does 'false' mean in terms of a double or multiple foul?",
-      "expected_answer": "A false double foul or false multiple foul occurs when there are fouls by both teams, but the fouls are not committed at approximately the same time, or when one of the fouls is not a personal foul. In a false double foul situation, the penalties are administered in the order they occurred rather than offsetting.",
+      "expected_answer": "A false double foul occurs when fouls by both teams are not committed at approximately the same time, or when one foul is flagrant/intentional and the other is not. Unlike a true double foul where penalties offset, in a false double foul each foul is penalized separately in the order they occurred.",
       "required_sources": ["Rule 4-19-8", "Rule 4-19-9"],
-      "acceptable_sources": ["Case 4.19"],
+      "acceptable_sources": ["Case 4.19.8 SITUATION A"],
       "category": "pure_rules",
-      "difficulty": "medium",
-      "tags": ["fouls", "double foul", "false double foul"]
+      "difficulty": "medium"
     },
     {
       "id": "q011",
       "question": "Is the ball live during technical free throws?",
-      "expected_answer": "No. The ball becomes live when it is at the disposal of the free thrower. During technical foul free throws, no players line up on the lane, and the ball does not become live in the same way as during personal foul free throws.",
-      "required_sources": ["Rule 6-1"],
-      "acceptable_sources": ["Case 6.1"],
+      "expected_answer": "Yes. The ball becomes live when it is at the disposal of the free thrower per Rule 6-1-2. This applies to all free throws including technical foul free throws. The difference is that during technical free throws, no players occupy lane spaces and the ball is not put in play after the final attempt - instead play resumes with a throw-in at the division line.",
+      "required_sources": ["Rule 6-1-2"],
+      "acceptable_sources": ["Case 6.1.2 SITUATION A"],
       "category": "pure_rules",
-      "difficulty": "medium",
-      "tags": ["free throws", "live ball", "technical fouls"]
+      "difficulty": "medium"
     },
     {
       "id": "q012",
       "question": "Is it a delay of game for not filling both bottom lane spaces? Technical?",
-      "expected_answer": "Teams are required to fill the first marked lane spaces on each side during free throws when entitled to do so. Failure to properly fill the lane spaces can result in a delay of game warning for the first offense, and a technical foul for subsequent offenses.",
-      "required_sources": ["Rule 10-1-5", "Rule 9-1-3"],
-      "acceptable_sources": ["Case 10.1"],
+      "expected_answer": "The defensive team is required to fill both first marked lane spaces during free throws. If only one opponent occupies a lane space, a delay warning is issued for the first offense. Subsequent offenses result in a team technical foul. This is per Rule 10-1-5b and Rule 9-1-3g.",
+      "required_sources": ["Rule 10-1-5b", "Rule 9-1-3g"],
+      "acceptable_sources": ["Case 10.1.5 SITUATION B"],
       "category": "scenarios",
-      "difficulty": "hard",
-      "tags": ["delay of game", "free throws", "lane spaces"]
+      "difficulty": "hard"
     },
     {
       "id": "q013",
       "question": "What is basket interference?",
       "expected_answer": "Basket interference occurs when a player touches the ball or basket while the ball is on or within the basket, touches the ball while it is touching the cylinder having the ring as its lower base, or reaches through the basket from below and touches the ball. It also occurs when a player causes the backboard or basket to vibrate while the ball is on or within the basket, touching the backboard, or within the cylinder.",
       "required_sources": ["Rule 4-6"],
-      "acceptable_sources": ["Case 4.6"],
+      "acceptable_sources": ["Case 4.6.1 SITUATION A"],
       "category": "pure_rules",
-      "difficulty": "easy",
-      "tags": ["violations", "basket interference"]
+      "difficulty": "easy"
     },
     {
       "id": "q014",
       "question": "If a defender slaps the backboard while the ball is in the cylinder and touching the ring, is it basket interference?",
       "expected_answer": "Yes. Basket interference occurs when a player causes the backboard or basket to vibrate while the ball is in the cylinder and in contact with the ring. The vibration caused by slapping the backboard interferes with the shot. Two points are awarded to the offensive team.",
       "required_sources": ["Rule 4-6-1", "Rule 9-11-1"],
-      "acceptable_sources": ["Case 4.6.1"],
+      "acceptable_sources": ["Case 4.6.1 SITUATION B"],
       "category": "scenarios",
-      "difficulty": "medium",
-      "tags": ["basket interference", "backboard", "vibration"]
+      "difficulty": "medium"
     },
     {
       "id": "q015",
       "question": "What is the difference between goaltending and basket interference?",
       "expected_answer": "Goaltending applies only to defensive players and occurs when the ball is touched during a try while in downward flight above the ring. Basket interference can be committed by either team and occurs when the ball is touched while on or within the basket, or when a player causes the basket or backboard to vibrate while the ball is in the cylinder.",
       "required_sources": ["Rule 4-6", "Rule 4-22", "Rule 9-12"],
-      "acceptable_sources": ["Case 4.6", "Case 4.22"],
+      "acceptable_sources": ["Case 4.6.1 SITUATION A", "Case 4.22.1 SITUATION A"],
       "category": "pure_rules",
-      "difficulty": "medium",
-      "tags": ["goaltending", "basket interference", "comparison"]
+      "difficulty": "medium"
     },
     {
       "id": "q016",
       "question": "When does the ball become live on a free throw?",
       "expected_answer": "The ball becomes live when it is at the disposal of the free thrower. For personal foul free throws, the ball becomes live when players are in position and the ball is placed at the disposal of the thrower.",
-      "required_sources": ["Rule 6-1"],
-      "acceptable_sources": ["Case 6.1"],
+      "required_sources": ["Rule 6-1-2"],
+      "acceptable_sources": ["Case 6.1.2 SITUATION A"],
       "category": "pure_rules",
-      "difficulty": "easy",
-      "tags": ["free throws", "live ball"]
+      "difficulty": "easy"
     },
     {
       "id": "q017",
       "question": "What constitutes a held ball?",
-      "expected_answer": "A held ball occurs when opponents have their hands so firmly on the ball that control cannot be obtained without undue roughness, or when a player is lying on or holding the ball on the floor and does not attempt to release it. It can occur with one or both hands on the ball by each opponent.",
-      "required_sources": ["Rule 4-25"],
-      "acceptable_sources": ["Case 4.25"],
+      "expected_answer": "A held ball occurs when opponents have their hands so firmly on the ball that control cannot be obtained without undue roughness. It also occurs when a player in control of the ball on the floor does not attempt to get up or pass the ball. Possession is determined by the alternating-possession arrow.",
+      "required_sources": ["Rule 4-25-2"],
+      "acceptable_sources": ["Case 4.25.2 SITUATION A"],
       "category": "pure_rules",
-      "difficulty": "easy",
-      "tags": ["held ball", "jump ball"]
+      "difficulty": "easy"
     },
     {
       "id": "q018",
       "question": "What are the restrictions on the thrower during a throw-in?",
       "expected_answer": "The thrower must release the ball within 5 seconds, must not carry the ball onto the court, must not step on or over the boundary line until the ball is released, and must pass the ball directly onto the court (not over the backboard). The thrower may move along the end line after a goal but cannot move more than 3 feet from the designated spot on other throw-ins.",
       "required_sources": ["Rule 9-2"],
-      "acceptable_sources": ["Case 9.2"],
+      "acceptable_sources": ["Case 9.2.1 SITUATION A"],
       "category": "pure_rules",
-      "difficulty": "medium",
-      "tags": ["throw-in", "violations"]
+      "difficulty": "medium"
     },
     {
       "id": "q019",
       "question": "When can a player re-enter the game after being disqualified?",
       "expected_answer": "A disqualified player cannot re-enter the game. Once a player has been disqualified (by committing their fifth foul, second technical foul, or a flagrant foul), they become bench personnel and may not participate further as a player in that game.",
       "required_sources": ["Rule 4-14"],
-      "acceptable_sources": ["Case 4.14"],
+      "acceptable_sources": ["Case 4.14.1 SITUATION A"],
       "category": "pure_rules",
-      "difficulty": "easy",
-      "tags": ["disqualification", "fouls"]
+      "difficulty": "easy"
     },
     {
       "id": "q020",
       "question": "What is the 10-second backcourt count rule?",
-      "expected_answer": "A team in control of the ball in their backcourt must advance it to the frontcourt within 10 seconds. The count starts when a player gains control in the backcourt. The count continues during a dribble and ends when the ball and both feet of the player touch the frontcourt.",
+      "expected_answer": "A team has 10 seconds to advance the ball from the backcourt to the frontcourt after gaining team control. The count starts when a player gains control in the backcourt. The ball is in the frontcourt when the ball and both feet of the player with the ball touch the frontcourt.",
       "required_sources": ["Rule 9-8"],
-      "acceptable_sources": ["Case 9.8"],
+      "acceptable_sources": ["Case 9.8.1 SITUATION A"],
       "category": "pure_rules",
-      "difficulty": "easy",
-      "tags": ["backcourt", "violations", "timing"]
+      "difficulty": "easy"
     },
     {
       "id": "q021",
       "question": "A1 drives for a layup and B1 commits a hard foul from behind. The coach argues it should be flagrant. What determines if it's intentional vs flagrant?",
       "expected_answer": "An intentional foul is contact that is not a legitimate attempt to play the ball or a player, or is excessive contact. A flagrant foul is a personal or technical foul that is violent, savage, or excessive, showing a complete disregard for player safety. The severity and nature of the contact determines whether it's intentional (penalty: 2 free throws plus ball) or flagrant (penalty: 2 free throws plus ball AND disqualification).",
       "required_sources": ["Rule 4-19-3", "Rule 4-19-4"],
-      "acceptable_sources": ["Case 4.19.3"],
+      "acceptable_sources": ["Case 4.19.3 SITUATION A", "Case 4.19.4 SITUATION A"],
       "category": "scenarios",
-      "difficulty": "medium",
-      "tags": ["intentional foul", "flagrant foul", "severity"]
+      "difficulty": "medium"
     },
     {
       "id": "q022",
       "question": "If A1 dunks and taunts B1, then B1 punches A1, what happens?",
       "expected_answer": "Both A1 and B1 are charged with flagrant technical fouls for fighting and are disqualified. A1's taunting is considered fighting when it causes B1 to retaliate by fighting. Each team receives the appropriate free throws, and play resumes according to the rule on fighting.",
       "required_sources": ["Rule 4-18-2", "Rule 10-4-6c", "Rule 10-4-8"],
-      "acceptable_sources": ["Case 4.18.2"],
+      "acceptable_sources": ["Case 4.18.2 SITUATION A"],
       "category": "scenarios",
-      "difficulty": "hard",
-      "tags": ["fighting", "taunting", "flagrant foul", "disqualification"]
+      "difficulty": "hard"
     },
     {
       "id": "q023",
       "question": "What is a player-control foul?",
       "expected_answer": "A player-control foul is a common foul committed by a player while in control of the ball, or by an airborne shooter. No free throws are awarded to the opponent, and the ball is given to the opposing team for a throw-in. It also counts toward the team foul total and the player's personal foul count.",
       "required_sources": ["Rule 4-19-6"],
-      "acceptable_sources": ["Case 4.19.6"],
+      "acceptable_sources": ["Case 4.19.6 SITUATION A"],
       "category": "pure_rules",
-      "difficulty": "easy",
-      "tags": ["player control foul", "charging"]
+      "difficulty": "easy"
     },
     {
       "id": "q024",
       "question": "What is a team-control foul and when does it apply?",
       "expected_answer": "A team-control foul is a common foul committed by a member of the team in control of the ball, but who is not the player in control (not holding or dribbling). Examples include illegal screens set while a teammate has the ball. No free throws are awarded even if the team is in the bonus, and the ball is given to the opponent for a throw-in.",
       "required_sources": ["Rule 4-19-7"],
-      "acceptable_sources": ["Case 4.19.7"],
+      "acceptable_sources": ["Case 4.19.7 SITUATION A"],
       "category": "pure_rules",
-      "difficulty": "medium",
-      "tags": ["team control foul", "illegal screen"]
+      "difficulty": "medium"
     },
     {
       "id": "q025",
       "question": "A2 sets an illegal screen while A1 is dribbling. Team B is in the bonus. Does B get free throws?",
       "expected_answer": "No. This is a team-control foul. No free throws are awarded for a team-control foul, even if the team is in the bonus. Team B is awarded the ball for a throw-in at the designated spot closest to where the foul occurred.",
       "required_sources": ["Rule 4-19-7", "Rule 7-5-3b"],
-      "acceptable_sources": ["Case 4.19.7"],
+      "acceptable_sources": ["Case 4.19.7 SITUATION B"],
       "category": "scenarios",
-      "difficulty": "medium",
-      "tags": ["team control foul", "bonus", "illegal screen"]
+      "difficulty": "medium"
     },
     {
       "id": "q026",
       "question": "What is the three-second rule?",
       "expected_answer": "A player shall not remain for more than three seconds in the free-throw lane while their team is in control of the ball in the frontcourt. The count is suspended when the ball is in flight on a try for goal, when team control is lost, when a player is in the act of shooting, or when there is a throw-in.",
       "required_sources": ["Rule 9-7"],
-      "acceptable_sources": ["Case 9.7"],
+      "acceptable_sources": ["Case 9.7.1 SITUATION A"],
       "category": "pure_rules",
-      "difficulty": "easy",
-      "tags": ["three seconds", "lane violation"]
+      "difficulty": "easy"
     },
     {
       "id": "q027",
       "question": "A1 is in the lane for 4 seconds during a throw-in. Is this a violation?",
       "expected_answer": "No. The three-second rule is not in effect during a throw-in. Team control has not yet been established in the frontcourt, so there is no three-second count during the throw-in. The count only begins when team control is established in the frontcourt.",
       "required_sources": ["Rule 9-7-1 Note", "Rule 4-12-2"],
-      "acceptable_sources": ["Case 4.12.2"],
+      "acceptable_sources": ["Case 4.12.2 SITUATION A"],
       "category": "scenarios",
-      "difficulty": "medium",
-      "tags": ["three seconds", "throw-in", "team control"]
+      "difficulty": "medium"
     },
     {
       "id": "q028",
       "question": "What is the closely guarded rule?",
       "expected_answer": "A player in the frontcourt who is holding or dribbling the ball is closely guarded when an opponent is within 6 feet. A closely guarded count shall be terminated when the offensive player gets head and shoulders past the defender or the defender is no longer within 6 feet. A violation occurs if the player holds or dribbles for 5 seconds while closely guarded.",
       "required_sources": ["Rule 9-10"],
-      "acceptable_sources": ["Case 9.10"],
+      "acceptable_sources": ["Case 9.10.1 SITUATION A"],
       "category": "pure_rules",
-      "difficulty": "medium",
-      "tags": ["closely guarded", "five seconds"]
+      "difficulty": "medium"
     },
     {
       "id": "q029",
       "question": "Can an offensive player commit goaltending?",
       "expected_answer": "No. Goaltending can only be committed by defensive players. If an offensive player touches the ball during a try while it is in downward flight above the ring, it would be evaluated for potential basket interference instead of goaltending.",
       "required_sources": ["Rule 4-22", "Rule 9-12-1"],
-      "acceptable_sources": ["Case 4.22.1"],
+      "acceptable_sources": ["Case 4.22.1 SITUATION B"],
       "category": "pure_rules",
-      "difficulty": "medium",
-      "tags": ["goaltending", "offensive player"]
+      "difficulty": "medium"
     },
     {
       "id": "q030",
       "question": "A1 catches a rebound. Can A1 immediately start dribbling?",
       "expected_answer": "Yes. The dribble does not begin until A1 has gained control. While rebounding, touching the ball before gaining control does not start a dribble. Once A1 gains control, they can push the ball to the floor to begin a dribble. This is not a double dribble.",
       "required_sources": ["Rule 4-15-1"],
-      "acceptable_sources": ["Case 4.15.1"],
+      "acceptable_sources": ["Case 4.15.1 SITUATION B"],
       "category": "scenarios",
-      "difficulty": "easy",
-      "tags": ["dribbling", "rebounding", "control"]
+      "difficulty": "easy"
     },
     {
       "id": "q031",
       "question": "A1 is dribbling and the ball hits A1's foot and bounces away. A1 picks it up. Can A1 dribble again?",
       "expected_answer": "No. The dribble ended when A1 caught the ball after it hit their foot. Even though the dribble was interrupted by the ball hitting the foot, when A1 picked up the ball with their hands, the dribble ended. A1 may not dribble again but may pass or shoot.",
       "required_sources": ["Rule 4-15-4"],
-      "acceptable_sources": ["Case 4.15.4"],
+      "acceptable_sources": ["Case 4.15.4 SITUATION A"],
       "category": "scenarios",
-      "difficulty": "medium",
-      "tags": ["dribbling", "fumble", "violation"]
+      "difficulty": "medium"
     },
     {
       "id": "q032",
       "question": "A1 is dribbling and B1 touches the ball, causing it to bounce away. A1 recovers it. Can A1 dribble again?",
       "expected_answer": "Yes. The touch by B1 ended the original dribble. A1 can recover the ball and dribble again. However, the touch by B1 did not end team control, so the 10-second backcourt count continues if applicable.",
       "required_sources": ["Rule 4-15-4", "Rule 9-5-2"],
-      "acceptable_sources": ["Case 4.15.4"],
+      "acceptable_sources": ["Case 4.15.4 SITUATION B"],
       "category": "scenarios",
-      "difficulty": "medium",
-      "tags": ["dribbling", "deflection", "team control"]
+      "difficulty": "medium"
     },
     {
       "id": "q033",
       "question": "What is a correctable error and when can it be fixed?",
       "expected_answer": "A correctable error includes failure to award a merited free throw, awarding an unmerited free throw, permitting the wrong player to attempt a free throw, or attempting a free throw at the wrong basket. It may be corrected before the second live ball after the error, unless the official has definite information that the error was made.",
       "required_sources": ["Rule 2-10"],
-      "acceptable_sources": ["Case 2.10"],
+      "acceptable_sources": ["Case 2.10.1 SITUATION A"],
       "category": "pure_rules",
-      "difficulty": "medium",
-      "tags": ["correctable error", "free throws"]
+      "difficulty": "medium"
     },
     {
       "id": "q034",
       "question": "Team B fouls A1 (Team B's 5th foul) but officials give Team A the ball for throw-in instead of free throws. When can this be corrected?",
       "expected_answer": "This is a correctable error for failure to award merited free throws. It can be corrected before the second live ball after the error. If discovered before the ball becomes live again after the error, the free throws can still be awarded. Once the ball has become live twice after the error, it can no longer be corrected.",
       "required_sources": ["Rule 2-10-1", "Rule 2-10-6"],
-      "acceptable_sources": ["Case 2.10.1", "Case 2.10.6"],
+      "acceptable_sources": ["Case 2.10.1 SITUATION B", "Case 2.10.6 SITUATION A"],
       "category": "scenarios",
-      "difficulty": "hard",
-      "tags": ["correctable error", "free throws", "bonus"]
+      "difficulty": "hard"
     },
     {
       "id": "q035",
       "question": "What happens when officials hear the horn but are not sure if the ball was released before time expired?",
       "expected_answer": "If the signal cannot be heard or if officials are uncertain whether the ball was released before time expired, the referee has the final decision. Unless the referee has definite knowledge to alter the ruling, if a try was in flight and successful, the goal shall count. State associations may authorize video replay for end-of-game situations.",
       "required_sources": ["Rule 2-13", "Rule 2-2-1"],
-      "acceptable_sources": ["Case 2.2.1"],
+      "acceptable_sources": ["Case 2.2.1 SITUATION A"],
       "category": "scenarios",
-      "difficulty": "medium",
-      "tags": ["timing", "end of game", "referee decision"]
+      "difficulty": "medium"
     },
     {
       "id": "q036",
@@ -357,8 +322,7 @@
       "required_sources": ["Manual"],
       "acceptable_sources": [],
       "category": "mechanics",
-      "difficulty": "easy",
-      "tags": ["signals", "flopping"]
+      "difficulty": "easy"
     },
     {
       "id": "q037",
@@ -367,8 +331,7 @@
       "required_sources": ["Manual"],
       "acceptable_sources": [],
       "category": "mechanics",
-      "difficulty": "medium",
-      "tags": ["three-person mechanics", "rotations", "backcourt foul"]
+      "difficulty": "medium"
     },
     {
       "id": "q038",
@@ -377,128 +340,115 @@
       "required_sources": ["Manual 1.3.3"],
       "acceptable_sources": [],
       "category": "mechanics",
-      "difficulty": "medium",
-      "tags": ["fight", "officials duties", "safety"]
+      "difficulty": "medium"
     },
     {
       "id": "q039",
       "question": "What is legal guarding position?",
-      "expected_answer": "Legal guarding position is obtained when the defender has both feet touching the floor, is facing the opponent, and initially has distance between them. The defender may move to maintain position as long as they do not charge into the opponent. Time and distance are relevant if the opponent is moving.",
+      "expected_answer": "Legal guarding position is obtained when the defender has both feet touching the floor and is facing the opponent. Once legal guarding position is established, the defender may move laterally or obliquely to maintain position, provided they do not charge into the opponent. The defender is not required to be stationary.",
       "required_sources": ["Rule 4-23"],
-      "acceptable_sources": ["Case 4.23"],
+      "acceptable_sources": ["Case 4.23.1 SITUATION A"],
       "category": "pure_rules",
-      "difficulty": "medium",
-      "tags": ["legal guarding position", "defense"]
+      "difficulty": "medium"
     },
     {
       "id": "q040",
       "question": "Is lying on the floor considered a legal guarding position?",
       "expected_answer": "No. Lying on the playing court is not considered a legal guarding position. If a player trips over a defender who is lying on the floor, it is a blocking foul on the defender.",
       "required_sources": ["Rule 4-23-2"],
-      "acceptable_sources": ["Case 4.23.1"],
+      "acceptable_sources": ["Case 4.23.1 SITUATION B"],
       "category": "scenarios",
-      "difficulty": "easy",
-      "tags": ["legal guarding position", "blocking foul"]
+      "difficulty": "easy"
     },
     {
       "id": "q041",
       "question": "What is the penalty for a technical foul?",
-      "expected_answer": "Two free throws are awarded for each technical foul. Any player from the offended team may attempt the free throws. Following the free throws, play resumes with a throw-in by the offended team at the division line opposite the scorer's table. The technical foul counts toward the team foul total and the individual's foul count for disqualification.",
-      "required_sources": ["Rule 10-4"],
-      "acceptable_sources": [],
+      "expected_answer": "Two free throws are awarded for each technical foul. Any team member may attempt the free throws. Play resumes at the point of interruption. If the technical foul was committed before the game began or during an intermission, play resumes with a throw-in at the division line opposite the scorer's table.",
+      "required_sources": ["Rule 10-4", "Rule 8-5-1"],
+      "acceptable_sources": ["Case 10.4.1 SITUATION A"],
       "category": "pure_rules",
-      "difficulty": "easy",
-      "tags": ["technical foul", "penalty", "free throws"]
+      "difficulty": "easy"
     },
     {
       "id": "q042",
       "question": "How many fouls result in disqualification?",
       "expected_answer": "A player is disqualified upon committing their fifth foul (personal and technical fouls combined), or upon committing their second technical foul, or upon committing a single flagrant foul. Once disqualified, the player becomes bench personnel.",
       "required_sources": ["Rule 4-14"],
-      "acceptable_sources": ["Case 4.14"],
+      "acceptable_sources": ["Case 4.14.1 SITUATION A"],
       "category": "pure_rules",
-      "difficulty": "easy",
-      "tags": ["disqualification", "fouls", "ejection"]
+      "difficulty": "easy"
     },
     {
       "id": "q043",
       "question": "A player commits a technical foul after a dead ball personal foul is called on them. Is this their 5th foul if they had 4?",
       "expected_answer": "Yes. Both personal and technical fouls count toward the five-foul disqualification limit. If A1 had four fouls and then commits a technical foul (even after a dead ball), A1 is disqualified with their fifth foul. Both fouls must be recorded and penalized.",
       "required_sources": ["Rule 4-14-1"],
-      "acceptable_sources": ["Case 4.14.1"],
+      "acceptable_sources": ["Case 4.14.1 SITUATION B"],
       "category": "scenarios",
-      "difficulty": "medium",
-      "tags": ["disqualification", "fouls", "technical foul"]
+      "difficulty": "medium"
     },
     {
       "id": "q044",
       "question": "What is the kicking violation rule?",
       "expected_answer": "Kicking the ball is a violation when it is intentional. It includes intentionally striking the ball with any part of the leg or foot, or intentionally blocking a pass with the foot. Accidentally having the ball hit a player's leg is not a violation.",
       "required_sources": ["Rule 4-29", "Rule 9-4"],
-      "acceptable_sources": ["Case 4.29"],
+      "acceptable_sources": ["Case 4.29.1 SITUATION A"],
       "category": "pure_rules",
-      "difficulty": "easy",
-      "tags": ["kicking", "violation"]
+      "difficulty": "easy"
     },
     {
       "id": "q045",
       "question": "A1 rolls the ball inbounds and A2 stops it by putting a foot on top of it. Violation?",
       "expected_answer": "Yes. This is a kicking violation on A2 for intentionally striking the ball with a foot. Even though A2 is just stopping the ball rather than kicking it away, intentionally using the foot to control the ball is a violation.",
       "required_sources": ["Rule 9-4"],
-      "acceptable_sources": ["Case 4.29"],
+      "acceptable_sources": ["Case 4.29.1 SITUATION B"],
       "category": "scenarios",
-      "difficulty": "medium",
-      "tags": ["kicking", "throw-in", "violation"]
+      "difficulty": "medium"
     },
     {
       "id": "q046",
       "question": "When does a player become bench personnel during a timeout?",
       "expected_answer": "Once the official has instructed the timer to start the timeout, all players become bench personnel. They remain bench personnel until the ball becomes live following the timeout. If a player commits a technical foul during a timeout, an indirect technical foul is also charged to the head coach.",
       "required_sources": ["Rule 4-34"],
-      "acceptable_sources": ["Case 4.34"],
+      "acceptable_sources": ["Case 4.34.1 SITUATION A"],
       "category": "pure_rules",
-      "difficulty": "medium",
-      "tags": ["bench personnel", "timeout", "technical foul"]
+      "difficulty": "medium"
     },
     {
       "id": "q047",
       "question": "What happens if the throw-in spot is inside the three-point line vs outside?",
       "expected_answer": "Under the 2025-26 rule change, the three-point line is used as the boundary to determine throw-in locations. If the stoppage occurs on or within the three-point line, the throw-in is at the end line 3 feet outside the lane line. If outside the three-point line, the throw-in is at the sideline at the 28-foot line.",
       "required_sources": ["Rule 7-5-4"],
-      "acceptable_sources": ["Case 7.5.4"],
+      "acceptable_sources": ["Case 7.5.4 SITUATION A"],
       "category": "pure_rules",
-      "difficulty": "medium",
-      "tags": ["throw-in", "three-point line", "rule change"]
+      "difficulty": "medium"
     },
     {
       "id": "q048",
       "question": "A thrower delays returning to the court after a throw-in and then receives the first pass. Is this a violation?",
       "expected_answer": "Yes. A player who completes a throw-in cannot purposefully delay returning to the court and then be the first to touch the ball. This is a violation. However, if another player touches the ball first before the thrower returns, there is no violation.",
       "required_sources": ["Rule 9-2-12"],
-      "acceptable_sources": ["Case 9.2.12"],
+      "acceptable_sources": ["Case 9.2.12 SITUATION A"],
       "category": "scenarios",
-      "difficulty": "hard",
-      "tags": ["throw-in", "delay", "violation"]
+      "difficulty": "hard"
     },
     {
       "id": "q049",
       "question": "What happens when a double foul occurs during a try for goal?",
-      "expected_answer": "A double foul does not cause the ball to become dead during a try. If the try is successful, the goal is scored and play resumes at the point of interruption (throw-in for the defending team from the end line). If the try is unsuccessful, the alternating-possession procedure is used because no team had control during the try.",
-      "required_sources": ["Rule 4-19-8"],
-      "acceptable_sources": ["Case 4.19.8"],
+      "expected_answer": "A double foul does not cause the ball to become dead during a try. If the try is successful, the goal counts and the defending team gets the ball for a throw-in from the end line. If the try is unsuccessful, play resumes using the alternating-possession arrow since neither team had control when the fouls offset.",
+      "required_sources": ["Rule 4-19-8", "Rule 6-7-1 Exception"],
+      "acceptable_sources": ["Case 4.19.8 SITUATION A"],
       "category": "scenarios",
-      "difficulty": "hard",
-      "tags": ["double foul", "try for goal", "point of interruption"]
+      "difficulty": "hard"
     },
     {
       "id": "q050",
       "question": "An airborne shooter commits a charge after releasing the ball. The try is successful. Does the goal count?",
       "expected_answer": "No. A player-control foul by an airborne shooter causes the ball to become dead immediately. The goal does not count. Team B is awarded the ball for a throw-in at one of the four designated out-of-bounds spots based on the location of the foul relative to the three-point line.",
       "required_sources": ["Rule 4-12-1", "Rule 6-7-4", "Rule 7-5-3b"],
-      "acceptable_sources": ["Case 4.12.1", "Case 4.19.6"],
+      "acceptable_sources": ["Case 4.12.1 SITUATION A", "Case 4.19.6 SITUATION A"],
       "category": "scenarios",
-      "difficulty": "hard",
-      "tags": ["player control foul", "airborne shooter", "goal"]
+      "difficulty": "hard"
     }
   ]
 }
