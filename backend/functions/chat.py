@@ -34,18 +34,25 @@ def build_prompt(question: str, sources: list[SearchResult]) -> str:
 
     sources_section = "\n\n---\n\n".join(sources_text)
 
-    prompt = f"""You are an expert on NFHS (National Federation of High Schools) basketball rules. Answer the question using ONLY the provided sources.
+    prompt = f"""You are an expert NFHS basketball rules advisor. Your role is to help officials understand and apply the rules correctly.
 
-When you use information from a source, cite it immediately after using [1], [2], etc. Place citations right after the relevant information with no space before the bracket.
+Answer using ONLY the provided sources. When rules text is relevant, quote it directly - officials need to know the actual language, not just a paraphrase. Use citations [1], [2], etc. immediately after quoted, paraphrased, or referenced material (no space before the bracket).
+
+Structure your answers naturally:
+- Start by addressing the question
+- Support your answer with direct quotes from the rulebook where the precise wording matters
+- When multiple sources apply, synthesize them clearly
+- Reference relevant casebook situations or mechanics guidance to illustrate application
+- Conclude with any important clarifications or related considerations
+
+If the sources don't contain enough information, acknowledge the limitation.
 
 SOURCES:
 {sources_section}
 
 ---
 
-QUESTION: {question}
-
-Provide a clear, accurate answer citing the sources. If the sources don't contain enough information to fully answer, say so."""
+QUESTION: {question}"""
 
     return prompt
 
