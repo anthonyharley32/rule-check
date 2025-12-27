@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": "q001",
+      "question": "What is a double dribble?",
+      "expected_answer": "A double dribble violation occurs when a player dribbles the ball, allows it to come to rest in one or both hands, and then dribbles again. It also occurs when a player dribbles the ball with both hands simultaneously.",
+      "required_sources": ["Rule 4-15"],
+      "acceptable_sources": ["Case 4.15"],
+      "category": "pure_rules",
+      "difficulty": "easy",
+      "tags": ["violations", "dribbling"]
+    },
+    {
+      "id": "q002",
+      "question": "What is a goaltend?",
+      "expected_answer": "Goaltending occurs when a player touches the ball during a field goal try or tap while the ball is in its downward flight entirely above the basket ring level, or touches the ball while it is on or within the basket, or touches the basket or net while the ball is on or within the basket.",
+      "required_sources": ["Rule 4-22"],
+      "acceptable_sources": ["Case 4.22"],
+      "category": "pure_rules",
+      "difficulty": "easy",
+      "tags": ["violations", "goaltending"]
+    },
+    {
+      "id": "q003",
+      "question": "Where does it say anything about landing space of the shooter in the rule book?",
+      "expected_answer": "Rule 4-7-2 defines the airborne shooter and their protection. The defender must provide the shooter with a safe landing area. If a defender causes contact with an airborne shooter that is not incidental, it is a foul.",
+      "required_sources": ["Rule 4-7-2", "Rule 10-6-1"],
+      "acceptable_sources": ["Case 4.7.2"],
+      "category": "pure_rules",
+      "difficulty": "medium",
+      "tags": ["fouls", "airborne shooter", "landing space"]
+    },
+    {
+      "id": "q004",
+      "question": "In three man mechanics, if the lead is table side and makes a foul call, what does the center do?",
+      "expected_answer": "When the tableside Lead makes a foul call in three-person mechanics, the Center rotates to become the new Lead on the opposite side of the court. The Trail remains as Trail.",
+      "required_sources": ["Manual 7"],
+      "acceptable_sources": [],
+      "category": "mechanics",
+      "difficulty": "medium",
+      "tags": ["three-person mechanics", "rotations", "foul coverage"]
+    },
+    {
+      "id": "q005",
+      "question": "In 2 man mechanics and 3 man mechanics, do the T/L and the C/L watch the same lane players or is it different?",
+      "expected_answer": "The coverage differs between 2-person and 3-person mechanics. In 2-person mechanics, the Lead watches the three players on their side of the lane. In 3-person mechanics, with a Center official added, the responsibilities are distributed differently with the Center covering the middle area.",
+      "required_sources": ["Manual"],
+      "acceptable_sources": [],
+      "category": "mechanics",
+      "difficulty": "hard",
+      "tags": ["mechanics comparison", "lane coverage", "free throws"]
+    },
+    {
+      "id": "q006",
+      "question": "Can the thrower run the end line after an offensive free throw violation?",
+      "expected_answer": "No. The thrower may only run the end line after a made basket (goal) or awarded goal. A free throw violation results in a throw-in from the designated spot, not a running end line situation.",
+      "required_sources": ["Rule 7-5-7"],
+      "acceptable_sources": ["Case 7.5.7"],
+      "category": "scenarios",
+      "difficulty": "hard",
+      "tags": ["throw-in", "end line", "free throw violations"]
+    },
+    {
+      "id": "q007",
+      "question": "Does getting a team technical (slapping ball on throw-in) eat up the delay of game warning?",
+      "expected_answer": "No. A team technical foul for slapping the ball on a throw-in is a separate penalty from the delay of game warning system. The delay of game warning is specifically for delay violations, and a technical foul is assessed independently.",
+      "required_sources": ["Rule 10-1", "Rule 10-2"],
+      "acceptable_sources": ["Case 10.1", "Case 10.2"],
+      "category": "scenarios",
+      "difficulty": "hard",
+      "tags": ["technical fouls", "delay of game", "warnings"]
+    },
+    {
+      "id": "q008",
+      "question": "Where does it say that dribble-fumble-dribble = violation?",
+      "expected_answer": "A fumble is the accidental loss of player control. Rule 4-15-4 states that after a player has ended their dribble, they may not dribble again. However, recovering a fumble is not considered starting a new dribble. The sequence dribble-fumble-dribble is NOT a violation if the fumble was accidental.",
+      "required_sources": ["Rule 4-15", "Rule 4-25"],
+      "acceptable_sources": ["Case 4.15", "Case 4.25"],
+      "category": "challenge",
+      "difficulty": "hard",
+      "tags": ["violations", "dribbling", "fumble", "trick question"]
+    },
+    {
+      "id": "q009",
+      "question": "What do you do in a block/charge situation?",
+      "expected_answer": "In a block/charge situation, officials must determine: (1) Did the defender establish legal guarding position before the opponent started their upward motion to shoot or pass? (2) Was the defender stationary or moving? (3) Did the defender give the airborne shooter room to land? If the defender was not in legal position, it's a blocking foul. If they were, it's a player control foul (charge).",
+      "required_sources": ["Rule 4-7", "Rule 4-23", "Rule 10-6"],
+      "acceptable_sources": ["Case 4.7", "Case 10.6"],
+      "category": "scenarios",
+      "difficulty": "medium",
+      "tags": ["fouls", "block charge", "legal guarding position"]
+    },
+    {
+      "id": "q010",
+      "question": "What does 'false' mean in terms of a double or multiple foul?",
+      "expected_answer": "A false double foul or false multiple foul occurs when there are fouls by both teams, but the fouls are not committed at approximately the same time, or when one of the fouls is not a personal foul. In a false double foul situation, the penalties are administered in the order they occurred rather than offsetting.",
+      "required_sources": ["Rule 4-19-8", "Rule 4-19-9"],
+      "acceptable_sources": ["Case 4.19"],
+      "category": "pure_rules",
+      "difficulty": "medium",
+      "tags": ["fouls", "double foul", "false double foul"]
+    },
+    {
+      "id": "q011",
+      "question": "Is the ball live during technical free throws?",
+      "expected_answer": "No. The ball becomes live when it is at the disposal of the free thrower. During technical foul free throws, no players line up on the lane, and the ball does not become live in the same way as during personal foul free throws.",
+      "required_sources": ["Rule 6-1"],
+      "acceptable_sources": ["Case 6.1"],
+      "category": "pure_rules",
+      "difficulty": "medium",
+      "tags": ["free throws", "live ball", "technical fouls"]
+    },
+    {
+      "id": "q012",
+      "question": "Is it a delay of game for not filling both bottom lane spaces? Technical?",
+      "expected_answer": "Teams are required to fill the first marked lane spaces on each side during free throws when entitled to do so. Failure to properly fill the lane spaces can result in a delay of game warning for the first offense, and a technical foul for subsequent offenses.",
+      "required_sources": ["Rule 10-1-5", "Rule 9-1-3"],
+      "acceptable_sources": ["Case 10.1"],
+      "category": "scenarios",
+      "difficulty": "hard",
+      "tags": ["delay of game", "free throws", "lane spaces"]
+    }
+  ]
+}
